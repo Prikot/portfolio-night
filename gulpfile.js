@@ -1,3 +1,4 @@
+/*global $ require global*/
 'use strict';
 
 global.$ = {

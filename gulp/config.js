@@ -1,3 +1,6 @@
+/*global module */
+
+
 module.exports = {
   root: './build',
 
