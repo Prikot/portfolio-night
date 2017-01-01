@@ -1,6 +1,7 @@
 /*global $ require global*/
 'use strict';
 
+
 global.$ = {
   package: require('./package.json'),
   config: require('./gulp/config'),
@@ -19,6 +20,8 @@ global.$ = {
 $.path.task.forEach(function(taskPath) {
   require(taskPath)();
 });
+
+//указываем дефолтный таск
 
 $.gulp.task('default', $.gulp.series(
   'clean',

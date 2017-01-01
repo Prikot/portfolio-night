@@ -5,3 +5,19 @@ block variables
 
 block content
   include ../common/_greating
+
+
+  .class-name ---------
+  //- var item = "Значение переменной"
+  //- var items = ['1', '2', 'три'] //массив
+  //each item, index in items
+  //  .wrapper
+  //    .block= item
+  //    .index= index
+  //    .length= items.length
+  - var items = ['1', '2', 'три']
+  - for (var i = 0; i < items.length; i++)
+      .wrapper
+        .block = items[i]
+        .index= i
+        .length= items.length

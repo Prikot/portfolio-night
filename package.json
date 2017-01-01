@@ -1,7 +1,7 @@
 {
-  "name": "loftschool-builder",
+  "name": "portfolio-night",
   "version": "1.0.0",
-  "author": "a.kalin",
+  "author": "a.prikotov",
   "license": "ISC",
   "scripts": {
     "postinstall": "bower install"
@@ -23,6 +23,7 @@
     "gulp-sass": "2.2.0",
     "gulp-sourcemaps": "1.6.0",
     "gulp-svg-sprite": "^1.3.1",
+    "gulp-svg-sprites": "^4.0.2",
     "gulp-svgmin": "^1.2.2"
   },
   "dependencies": {
