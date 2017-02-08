@@ -4,7 +4,7 @@
 
 module.exports = function() {
   $.gulp.task('sass', function() {
-    return $.gulp.src('./source/style/app.scss')
+    return $.gulp.src('./source/style/**/*.{scss,scss}')
       .pipe($.gp.sourcemaps.init())
       .pipe($.gp.sass()).on('error', $.gp.notify.onError({ title: 'Style' }))
       .pipe($.gp.autoprefixer({ browsers: $.config.autoprefixerConfig }))
@@ -12,4 +12,4 @@ module.exports = function() {
       .pipe($.gulp.dest($.config.root + '/assets/css'))
       .pipe($.browserSync.stream());
   });
-};
+}; 

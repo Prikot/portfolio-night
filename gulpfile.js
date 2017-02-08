@@ -1,9 +1,9 @@
-/*global $ require global*/
+/*global $ require global */
 'use strict';
 
 
 global.$ = {
-  package: require('./package.json'),
+  package: require('./package.json'), //рекваирем и он превращается в объект
   config: require('./gulp/config'),
   path: {
     task: require('./gulp/paths/tasks.js'),

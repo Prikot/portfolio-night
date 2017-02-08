@@ -3,6 +3,11 @@
 
 'use strict';
 
+
+// определяем пути до кастомных js файлов, пишем слайдер, 
+// всякие фишки и разделяем по разным файлам
 module.exports = [
-  './source/js/app.js'
+  './source/js/app.js',
+  //'./source/js/popup.js'// пример
+    
 ];

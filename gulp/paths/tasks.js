@@ -16,3 +16,5 @@ module.exports = [
   './gulp/tasks/sprite.svg.js'
 ];
 
+// сюда добавляем новые таски
+
