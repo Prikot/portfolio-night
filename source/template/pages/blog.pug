@@ -1,0 +1,14 @@
+extends ../_template
+
+block link-css
+  link(href="assets/css/common/header.css", rel="stylesheet")
+  link(href="assets/css/common/footer.css", rel="stylesheet")
+  link(href="assets/css/common/blog_content.css", rel="stylesheet")
+block page-header
+  include ../includes/blog-header
+block content
+  include ../includes/blog-content
+block footer
+  include ../common/_footer
+
+

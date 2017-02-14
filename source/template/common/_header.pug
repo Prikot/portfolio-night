@@ -1,0 +1,22 @@
+.head-container
+  header.header
+    .socials
+      ul.socials__list
+        li.socials__item
+          a(href="#").socials__link.socials__link_vk
+            i.fa.fa-vk(aria-hidden="true")
+        li.socials__item
+          a(href="#").socials__link.socials__link_git
+            i.fa.fa-github-alt(aria-hidden="true")
+        li.socials__item
+          a(href="#").socials__link.socials__link_in
+            i.fa.fa-linkedin(aria-hidden="true")
+  .avatar
+    img(src="assets/img/avatar.png", alt="Logo").avatar__photo
+    block header-title
+    a#avatar__link(href="#content")
+      img(src="assets/img/arrow_down.png", alt="Logo").avatar__arrow
+  .box
+    svg.triangle(xmlns="http://www.w3.org/2000/svg", viewbox="0 0 1000 85", preserveaspectratio="none")
+      polygon(points="0,0   0,85   500.8,85   500.8,75.5")
+      polygon(points="1000,0   1000,85   500,85   500,75.5")

@@ -7,8 +7,8 @@ html(lang="en")
     meta(content="" name="keywords")
     meta(content="width=device-width, initial-scale=1" name="viewport")
     meta(content="ie=edge" http-equiv="x-ua-compatible")
-    //link(rel='stylesheet' href='/assets/css/foundation.css')
-    //link(rel='stylesheet' href='/assets/css/app.css')
+    link(rel='stylesheet' href='/assets/css/foundation.css')
+    link(rel='stylesheet' href='/assets/css/app.css')
     link(rel='stylesheet' href='assets/css/normalize.css')
     link(href="assets/css/main.css", rel="stylesheet")
     //link(href="assets/css/preloader.css", rel="stylesheet")
@@ -21,9 +21,10 @@ html(lang="en")
       block page-header
       block content
       block footer
-    //script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
-    script(src='assets/js/foundation.js' defer)
-    script(src='assets/js/app.js' defer)
-    //script(async, defer, src='https://maps.googleapis.com/maps/api/js?key= AIzaSyDdr8BJPYaQ1MGHcmzNYJviYgawVRJTXiI &callback=initMap')
+    script(src='assets/js/foundation.js', defer)
+    script(src='assets/js/app.js', defer)
+    //script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js')
+    //script(src='assets/js/google_maps.js')
+    script(async, src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC-d7QRuOg4ZsUxSz1eDDsEZxFCKzCx34g & callback=initMap')
 
     //include common/_preloader

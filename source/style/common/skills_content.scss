@@ -1,0 +1,209 @@
+
+.skills {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  .content-left {
+    display: flex;
+    flex: 1;
+    width: 50%;
+    min-height: 750px;
+    background-color: rgb(235, 239, 226);
+
+    .aboutme {
+      display: flex;
+      flex: 1;
+      width: 50%;
+      justify-content: center;
+
+      .aboutme__title {
+        color: rgb(55, 62, 66);
+        font-size: 63px;
+        line-height: 63px;
+        background-image: url("../img/about_header_back.png");
+        background-position: 40px -20px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+      }
+
+    }
+    .aboutme-description {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      width: 50%;
+
+      .aboutme-description__image {
+        margin-top: 15px;
+        margin-right: 20px;
+        max-width: 100%;
+      }
+      .aboutme-description__title {
+        text-align: center;
+        font-size: 35px;
+        line-height: 35px;
+        color: rgb(86, 99, 88);
+
+        .horizontal-line {
+          background-color: rgb(86, 99, 88);
+        }
+      }
+      .aboutme-description__description {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  .content-right {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: rgb(244, 245, 240);
+
+    .skills-items__title {
+      font-size: 35px;
+      line-height: 35px;
+      color: rgb(86, 99, 88);
+
+      .horizontal-line {
+        background-color: rgb(86, 99, 88);
+      }
+    }
+    .skills-items__description {
+      font-size: 16px;
+      line-height: 1.5;
+      color: rgb(86, 99, 88);
+      padding: 0 20px;
+
+    }
+    .skills-items__section-title {
+      margin-left: 30px;
+      font-size: 28px;
+      line-height: 28px;
+      color: rgb(86, 99, 88);
+    }
+    .skills-circles {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-left: -20px;
+      list-style: none;
+      .circle-wrap {
+        display:flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        min-width: 125px;
+        margin-left: 30px;
+
+        .circle-text {
+          position: absolute;
+          width: auto;
+          font-size: 14px;
+          white-space: normal;
+          color: rgb(116, 161, 99);
+          //          z-index: 1000;
+        }
+      }
+      circle {
+        fill: rgba(0,0,0,0);
+        stroke: #dfdcd5;
+        stroke-width: 20;
+        stroke-dasharray: 314px 314px;
+        transition: .8s;
+      }
+      circle:nth-child(2n) {
+        fill: rgba(0,0,0,0);
+        stroke: rgb(116, 161, 99);
+        stroke-width: 20;
+      }
+    }
+  }
+
+}
+.horizontal-line {
+  border: none;
+  width: 90px;
+  height: 3px;
+  margin-bottom: 0;
+  background-color: rgb(55, 62, 66);
+}
+
+.map {
+  position: relative;
+  #map {
+    position: relative;
+    width: 100%;
+    height: 930px;
+  }
+  .adress-form {
+    position: absolute;
+    z-index: 9000;
+    top: 30%;
+    left: 35%;
+    right: 0%;
+    text-align: center;
+    width: 385px;
+    height: 315px;
+    border-radius: 5px;
+    background-color: rgba(232, 232, 238, .6);
+
+    .fa-skype,
+    .fa-envelope,
+    .fa-phone {
+      color: rgb(108, 156, 90);
+    }
+  }
+}
+
+.footer {
+  position: relative;
+}
+
+.footer__down {
+  position: relative;
+}
+
+polygon:first-child {
+  fill: #ebefe2;
+}
+
+polygon:last-child {
+  fill: rgb(244, 245, 240);
+}
+
+.slider__display {
+  width: 400px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider__list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  .slider__item {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      //@include centered;
+    }
+  }
+}
